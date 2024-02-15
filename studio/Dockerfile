@@ -17,6 +17,6 @@ ENV PYTHONPATH="/home/app/.local/bin:/app:${PYTHONPATH}"
 # Run Autogenstudio
 RUN autogenstudio version
 
-EXPOSE 8088
+EXPOSE 8000
 
-ENTRYPOINT [ "autogenstudio", "ui", "--host", "0.0.0.0", "--port", "8088"]
+ENTRYPOINT [ "autogenstudio", "ui", "--host", "0.0.0.0", "--port", "8000"]
