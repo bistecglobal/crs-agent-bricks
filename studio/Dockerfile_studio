@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 # Copy application files and install dependencies
 COPY . /app
-COPY ./config /app/config
+# COPY ./config /app/config
 
 RUN pip install --upgrade pip
 WORKDIR /app
