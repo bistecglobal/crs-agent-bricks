@@ -19,3 +19,19 @@ docker build -f Dockerfile --tag bistecglobal/pghbricks-agent:1.0.0 .
 ```shell
 docker run -it -p 8000:8000 -e OPENAI_API_KEY='sk-******' bistecglobal/pghbricks-agent:1.0.0
 ```
+
+
+
+# Autogen Studio - Bistec Global Recruitment
+# AutoGen Multi-Agent Chat Window
+
+## Build docker image
+```shell
+ocker build -f ./studio/Dockerfile_studio --tag bistecglobal/recrutement-agent:1.0.0 .
+```
+
+## Run docker image
+```shell
+docker run -it -p 8000:8000 -e "OPENAI_API_KEY=sk-*****" bistecglobal/recrutement-agent:1.0.0
+
+```
