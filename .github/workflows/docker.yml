@@ -39,11 +39,10 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
         with:
-          image: bistecglobal/recrutement-agent
           context: ./studio
           file: ./studio/Dockerfile_studio
           push: true
-          tags: ${{ steps.meta.outputs.tags }}, ${{ github.sha }}, latest
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
   deploy:
       runs-on: ubuntu-latest
