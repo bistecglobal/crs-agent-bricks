@@ -42,7 +42,7 @@ jobs:
           context: ./studio
           file: ./studio/Dockerfile_studio
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: index.docker.io/bistecglobal/recrutement-agent:${{ github.sha }}
           labels: ${{ steps.meta.outputs.labels }}
   deploy:
       runs-on: ubuntu-latest
